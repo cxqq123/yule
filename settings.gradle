@@ -8,3 +8,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "My Application"
 include ':app'
+include ':libx_base'
+include ':libx_network'
+include ':libx_biz_base'

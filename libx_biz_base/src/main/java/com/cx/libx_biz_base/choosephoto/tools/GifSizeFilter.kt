@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.cx.myapplication.tools
+package com.cx.libx_biz_base.choosephoto.tools
 
 import android.content.Context
+import com.cx.libx_biz_base.R
 import com.zhihu.matisse.internal.entity.IncapableCause
 import com.zhihu.matisse.internal.utils.PhotoMetadataUtils
-import com.cx.myapplication.R
 import com.zhihu.matisse.MimeType
 import com.zhihu.matisse.filter.Filter
 import com.zhihu.matisse.internal.entity.Item
@@ -37,13 +37,13 @@ class GifSizeFilter(
         }
     }
 
-    override fun filter(context: Context, item: Item): IncapableCause? {
+    override fun filter(context: Context?, item: Item?): IncapableCause? {
         if (!needFiltering(context, item)) return null
-        val size = PhotoMetadataUtils.getBitmapBound(context.contentResolver, item.contentUri)
-        return if (size.x < mMinWidth || size.y < mMinHeight || item.size > mMaxSize) {
+        val size = PhotoMetadataUtils.getBitmapBound(context?.contentResolver, item?.contentUri)
+        return if (size.x < mMinWidth || size.y < mMinHeight || item?.size?:0 > mMaxSize) {
             IncapableCause(
                 IncapableCause.DIALOG,
-                context.getString(
+                context?.getString(
                     R.string.error_gif,
                     mMinWidth,
                     PhotoMetadataUtils.getSizeInMB(mMaxSize.toLong()).toString()
@@ -51,4 +51,5 @@ class GifSizeFilter(
             )
         } else null
     }
+
 }

@@ -14,10 +14,11 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/libx_base" />
             <option value="$PROJECT_DIR$/libx_biz_base" />
+            <option value="$PROJECT_DIR$/libx_imageloader" />
             <option value="$PROJECT_DIR$/libx_network" />
+            <option value="$PROJECT_DIR$/libx_ui" />
           </set>
         </option>
-        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

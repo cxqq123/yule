@@ -7,7 +7,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        minSdk 22
+        minSdk 21
         targetSdk 31
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -32,13 +32,9 @@ android {
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'com.google.android.material:material:1.4.0'
 
-    api 'com.squareup.okhttp3:okhttp:4.9.3'
-    api 'com.squareup.retrofit2:retrofit:2.9.0'
-    api 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
-    api 'com.squareup.retrofit2:adapter-rxjava3:2.9.0'
-    api 'com.squareup.retrofit2:converter-gson:2.9.0'
-    api 'com.squareup.retrofit2:converter-moshi:2.9.0'
-    api 'com.squareup.retrofit2:converter-simplexml:2.9.0'
-    api 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    // BRVAH  https://github.com/CymChad/BaseRecyclerViewAdapterHelper/blob/master/readme/0-BaseRecyclerViewAdapterHelper.md
+    api "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.8"
 }

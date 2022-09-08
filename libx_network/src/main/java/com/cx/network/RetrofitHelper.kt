@@ -24,7 +24,7 @@ class RetrofitHelper {
         }
 
         fun <T> createRequest(baseUrl: String, clazz: Class<T>) : T? {
-            return getInstance(baseUrl)?.create<T>(clazz)
+            return getInstance(baseUrl)?.create(clazz)
         }
     }
 

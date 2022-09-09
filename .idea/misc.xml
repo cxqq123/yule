@@ -8,6 +8,10 @@
         <entry key="app/src/main/res/layout/activity_test.xml" value="0.465625" />
         <entry key="app/src/main/res/layout/banner_item.xml" value="0.2734375" />
         <entry key="app/src/main/res/layout/fragment_homepage.xml" value="0.48854166666666665" />
+        <entry key="app/src/main/res/layout/homepage_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/main_fragment.xml" value="0.10973763874873865" />
+        <entry key="app/src/main/res/layout/mine_fragment.xml" value="0.10973763874873865" />
+        <entry key="app/src/main/res/layout/square_fragment.xml" value="0.10973763874873865" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1625" />
         <entry key="libx_biz_base/src/main/res/layout/activity_choose_photo.xml" value="0.35" />
       </map>

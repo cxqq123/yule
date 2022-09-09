@@ -12,6 +12,12 @@ import com.cx.myapplication.databinding.HomepageFragmentBinding
  */
 class HomePageFragment : BaseVBFragment<HomepageFragmentBinding>(){
 
+    companion object {
+        fun newInstance() : HomePageFragment{
+            return HomePageFragment()
+        }
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
     }

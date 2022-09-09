@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yule.ui.BaseConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        style="@style/TopCenterHorizontalInConstraintLayout"
+        app:layout_constraintBottom_toTopOf="@id/cl_tab"
+        />
+
+    <com.yule.ui.BaseConstraintLayout
+        android:id="@+id/cl_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        style="@style/BottomCenterHorizontalInConstraintLayout">
+
+        <com.yule.ui.BaseConstraintLayout
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/square">
+
+            <com.yule.ui.BaseImageView
+                android:id="@+id/iv_home_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_launcher"/>
+
+            <com.yule.ui.BaseTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/iv_home_icon"
+                app:layout_constraintStart_toStartOf="@id/iv_home_icon"
+                app:layout_constraintEnd_toEndOf="@id/iv_home_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="主页"/>
+
+        </com.yule.ui.BaseConstraintLayout>
+
+
+        <com.yule.ui.BaseConstraintLayout
+            android:id="@+id/square"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/home"
+            app:layout_constraintEnd_toStartOf="@id/mine">
+
+            <com.yule.ui.BaseImageView
+                android:id="@+id/iv_square_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_launcher"/>
+
+            <com.yule.ui.BaseTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/iv_square_icon"
+                app:layout_constraintStart_toStartOf="@id/iv_square_icon"
+                app:layout_constraintEnd_toEndOf="@id/iv_square_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="广场"/>
+        </com.yule.ui.BaseConstraintLayout>
+
+        <com.yule.ui.BaseConstraintLayout
+            android:id="@+id/mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/square"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.yule.ui.BaseImageView
+                android:id="@+id/iv_mine_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_launcher"/>
+
+            <com.yule.ui.BaseTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/iv_mine_icon"
+                app:layout_constraintStart_toStartOf="@id/iv_mine_icon"
+                app:layout_constraintEnd_toEndOf="@id/iv_mine_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="我的"/>
+        </com.yule.ui.BaseConstraintLayout>
+
+    </com.yule.ui.BaseConstraintLayout>
+</com.yule.ui.BaseConstraintLayout>

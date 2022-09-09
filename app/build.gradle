@@ -36,9 +36,7 @@ android {
 }
 
 dependencies {
-<<<<<<< HEAD
     api project(':libx_biz_base')
-=======
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
@@ -47,5 +45,4 @@ dependencies {
     implementation project(path: ':libx_biz_base')
 
 
->>>>>>> 3e9666b ([feat]新增 libx_design_mode 设计模式模块)
 }

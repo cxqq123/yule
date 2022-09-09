@@ -2,9 +2,6 @@ include ':app'
 include ':libx_base'
 include ':libx_network'
 include ':libx_biz_base'
-<<<<<<< HEAD
 include ':libx_imageloader'
 include ':libx_ui'
-=======
 include ':libx_design_mode'
->>>>>>> 3e9666b ([feat]新增 libx_design_mode 设计模式模块)

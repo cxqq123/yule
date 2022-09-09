@@ -14,7 +14,11 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/libx_base" />
             <option value="$PROJECT_DIR$/libx_biz_base" />
+<<<<<<< HEAD
             <option value="$PROJECT_DIR$/libx_imageloader" />
+=======
+            <option value="$PROJECT_DIR$/libx_design_mode" />
+>>>>>>> 3e9666b ([feat]新增 libx_design_mode 设计模式模块)
             <option value="$PROJECT_DIR$/libx_network" />
             <option value="$PROJECT_DIR$/libx_ui" />
           </set>
